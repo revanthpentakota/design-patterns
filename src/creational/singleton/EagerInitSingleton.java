@@ -11,6 +11,11 @@ package creational.singleton;
  *
  *  a. To manage shared resources, such as config setting, logging, caching etc.
  *  b. Saves memory as object is created only once not per request.
+ *
+ *  Issues :
+ *
+ *  a. Object gets created when class is loaded, so object is created even if it
+ *     is not used that leads to memory waste
  */
 
 public class EagerInitSingleton {
