@@ -13,7 +13,7 @@ public class BillPughSingleton {
     public BillPughSingleton(){}
 
     public static class DatabaseSingletonHelper{
-        public static final DatabaseConnection DATABASE_CONNECTION =
+        private static final DatabaseConnection DATABASE_CONNECTION =
                 new DatabaseConnection();
     }
 

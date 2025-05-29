@@ -15,7 +15,7 @@ package creational.singleton;
 
 public class DoubleCheckedLocking {
 
-    public volatile static DatabaseConnection connObject;
+    private volatile static DatabaseConnection connObject;
 
     private DoubleCheckedLocking(){}
 

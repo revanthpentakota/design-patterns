@@ -15,7 +15,7 @@ package creational.singleton;
 
 public class LazyInitSingleton {
 
-    public static DatabaseConnection connObject;
+    private static DatabaseConnection connObject;
 
     private LazyInitSingleton(){
     }
