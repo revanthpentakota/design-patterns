@@ -11,6 +11,9 @@ package creational.singleton;
  *  i.e., if T1 created connObject, T2, T3, T4... incoming threads
  *  no need to wait since connObject is already made available by T1.
  *
+ *  If T2, T3 are waiting at synchronized block, after T1 releases lock then
+ *  T2 might be creating another instance violating Singleton Pattern.
+ *
  */
 
 public class DoubleCheckedLocking {
