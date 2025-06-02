@@ -1,0 +1,33 @@
+Creational Design Pattern :
+
+    1. A category of design patterns in software engineering that deals with object creation
+       mechanisms.
+    2. Instead of creating objects using new, creational patterns provide a flexible and
+       reusable ways to create objects based on the situation.
+
+What they do :
+
+    1. Abstract the initialization process.
+    2. Helps make your code more flexible, decoupled and easier to test.
+    3. Manage object creation in more controlled and scalable way.
+
+Different Ways :
+
+    1. Singleton : Ensures only one instance of class exists and provides a global access point.
+    2. Factory   : Defines an interface for creating an object, but let subclass decides which
+                   class to instantiate.
+    3. Builder   : Helps in constructing a complex object step by step.
+    4. Abstract Factory
+                 : Produces a family of related objects without specifying the concrete class.
+
+
+Use Case                                        :                  Example
+
+a. You want a single shared resource            :  Singleton for config manager or logging system
+b. You want to simplify object creation when    :  Builder for creating objects like User, Pizza.
+   constructors are messy.
+c. You want dynamic object creation based on    :  Factory method for creating different types of
+   input                                           notifications (SMS, Email).
+d. You need to create a family of related       :  Abstract factory for GUI components (buttons,
+   objects                                         menus) for different OS.
+
