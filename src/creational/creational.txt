@@ -11,7 +11,7 @@ What they do :
     2. Helps make your code more flexible, decoupled and easier to test.
     3. Manage object creation in more controlled and scalable way.
 
-Different Ways :
+Design Patterns :
 
     1. Singleton : Ensures only one instance of class exists and provides a global access point.
     2. Factory   : Defines an interface for creating an object, but let subclass decides which

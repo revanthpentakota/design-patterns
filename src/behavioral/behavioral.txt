@@ -1,0 +1,24 @@
+Behavioral Design Patterns :
+
+    1. Behavioral Design Patterns are a category of design patterns that focus on how objects
+       interact and communicate with each other.
+    2. These patterns define how responsibilities are shared among objects and help manage
+       complex control flows, algorithm execution and object collaboration.
+
+What they do :
+
+    1. Focus on behavior and communication between objects.
+    2. Help manage runtime interactions and responsibilities.
+    3. Promote loose coupling between interacting classes.
+
+Design Patterns :
+
+    1. Strategy      :  Selects an algorithm’s behavior at runtime.
+    2. Observer      :  Notifies multiple objects when one object changes (pub-sub model).
+
+
+Why Use Behavioral Patterns?
+
+Scenario                                            :       Pattern
+a. You want to switch algorithms at runtime	        :  Strategy
+b. One change should notify many objects	        :  Observer
