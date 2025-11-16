@@ -18,14 +18,14 @@ package creational.singleton;
 
 public class DoubleCheckedLocking {
 
-    private volatile static DatabaseConnection connObject;
+    private volatile static DoubleCheckedLocking connObject;
 
     private DoubleCheckedLocking(){}
 
-    public static DatabaseConnection getSingletonInstance() {
+    public static DoubleCheckedLocking getSingletonInstance() {
         if (connObject == null) {
-            synchronized (DatabaseConnection.class) {
-                return new DatabaseConnection();
+            synchronized (DoubleCheckedLocking.class) {
+                return new DoubleCheckedLocking();
             }
         }
         return connObject;
