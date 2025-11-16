@@ -21,15 +21,15 @@ package creational.singleton;
 public class EagerInitSingleton {
 
     // Object created at the time of declaration.
-    private static DatabaseConnection connObject =
-                                new DatabaseConnection();
+    private static EagerInitSingleton connObject =
+                                new EagerInitSingleton();
 
     // since constructor is private, can't create an object with new keyword.
     private EagerInitSingleton(){
     }
 
     // returns the object that is created.
-    public static DatabaseConnection getConnObject() {
+    public static EagerInitSingleton getConnObject() {
         return connObject;
     }
 }
