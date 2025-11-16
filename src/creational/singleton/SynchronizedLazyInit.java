@@ -13,13 +13,13 @@ package creational.singleton;
 
 public class SynchronizedLazyInit {
 
-    private static DatabaseConnection connObject;
+    private static SynchronizedLazyInit connObject;
 
     private SynchronizedLazyInit(){}
 
-    public static synchronized DatabaseConnection getSingletonInstance() {
+    public static synchronized SynchronizedLazyInit getSingletonInstance() {
         if (connObject == null) {
-            return new DatabaseConnection();
+            return new SynchronizedLazyInit();
         }
         return connObject;
     }
