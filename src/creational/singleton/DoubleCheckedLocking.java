@@ -25,7 +25,8 @@ public class DoubleCheckedLocking {
     public static DoubleCheckedLocking getSingletonInstance() {
         if (connObject == null) {
             synchronized (DoubleCheckedLocking.class) {
-                return new DoubleCheckedLocking();
+                if (connObject == null)
+                    connObject = new DoubleCheckedLocking();
             }
         }
         return connObject;
