@@ -12,12 +12,12 @@ public class BillPughSingleton {
 
     public BillPughSingleton(){}
 
-    public static class DatabaseSingletonHelper{
-        private static final DatabaseConnection DATABASE_CONNECTION =
-                new DatabaseConnection();
+    public static class SingletonHelper{
+        private static final BillPughSingleton INSTANCE =
+                new BillPughSingleton();
     }
 
-    public static DatabaseConnection getSingletonInstance() {
-        return DatabaseSingletonHelper.DATABASE_CONNECTION;
+    public static BillPughSingleton getSingletonInstance() {
+        return SingletonHelper.INSTANCE;
     }
 }
