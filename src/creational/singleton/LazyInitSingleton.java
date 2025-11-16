@@ -15,14 +15,14 @@ package creational.singleton;
 
 public class LazyInitSingleton {
 
-    private static DatabaseConnection connObject;
+    private static LazyInitSingleton connObject;
 
     private LazyInitSingleton(){
     }
 
-    public static DatabaseConnection getSingletonInstance() {
+    public static LazyInitSingleton getSingletonInstance() {
         if (connObject == null) {
-            return new DatabaseConnection();
+            return new LazyInitSingleton();
         }
         return connObject;
     }
